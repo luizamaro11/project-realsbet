@@ -8,8 +8,9 @@ import { Link } from '@inertiajs/vue3';
         class="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0"
     >
         <div>
-            <Link href="/">
-                <ApplicationLogo class="h-20 w-20 fill-current text-gray-500" />
+            <Link href="">
+                <!-- <ApplicationLogo class="h-20 w-20 fill-current text-gray-500" /> -->
+                 <img class="h-20 w-20 fill-current text-gray-500" src="https://static.pl-01.cdn-platform.com/themes/1.1.38/reals.bet/icons/icon-180x180.png" alt="Logo Reals bet">
             </Link>
         </div>
 
