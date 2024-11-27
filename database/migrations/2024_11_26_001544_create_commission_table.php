@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->decimal('value', 8, 2);
             $table->datetime('date_commission');
-            $table->foreignId('affiliates_id')->references('id')->on('affiliates');
+            $table->foreignId('affiliates_id')->references('id')->on('affiliates')->onDelete('cascade');
             $table->timestamps();
         });
     }

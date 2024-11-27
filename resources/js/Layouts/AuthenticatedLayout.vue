@@ -57,8 +57,8 @@ const showingNavigationDropdown = ref(false);
                                 class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
                             >
                                 <NavLink
-                                    :href="route('commition.index')"
-                                    :active="route().current('commition.index')"
+                                    :href="route('commission.index')"
+                                    :active="route().current('commission.index')"
                                 >
                                     Comissões
                                 </NavLink>

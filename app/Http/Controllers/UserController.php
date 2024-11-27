@@ -98,6 +98,7 @@ class UserController extends Controller
             $request->session()->regenerateToken();
         }
 
+        // $user->affiliates()->delete();
         $user->delete();
 
         return redirect()->route('users.index');

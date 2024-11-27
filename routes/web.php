@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AffiliatesController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\CommitionController;
+use App\Http\Controllers\CommissionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
@@ -38,12 +38,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/affiliates/{affiliate}', [AffiliatesController::class, 'update'])->name('affiliates.update');
     Route::delete('/affiliates/{affiliate}', [AffiliatesController::class, 'destroy'])->name('affiliates.destroy');
 
-    Route::get('/commition', [CommitionController::class, 'index'])->name('commition.index');
-    Route::get('/commition/create', [CommitionController::class, 'create'])->name('commition.create');
-    Route::post('/commition', [CommitionController::class, 'store'])->name('commition.store');
-    Route::get('/commition/{commition}/edit', [CommitionController::class, 'edit'])->name('commition.edit');
-    Route::patch('/commition/{commition}', [CommitionController::class, 'update'])->name('commition.update');
-    Route::delete('/commition/{commition}', [CommitionController::class, 'destroy'])->name('commition.destroy');
+    Route::get('/commission', [CommissionController::class, 'index'])->name('commission.index');
+    Route::get('/commission/create', [CommissionController::class, 'create'])->name('commission.create');
+    Route::post('/commission', [CommissionController::class, 'store'])->name('commission.store');
+    Route::get('/commission/{commission}/edit', [CommissionController::class, 'edit'])->name('commission.edit');
+    Route::patch('/commission/{commission}', [CommissionController::class, 'update'])->name('commission.update');
+    Route::delete('/commission/{commission}', [CommissionController::class, 'destroy'])->name('commission.destroy');
 });
 
 require __DIR__.'/auth.php';

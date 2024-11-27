@@ -16,4 +16,13 @@ class Commission extends Model
      * @var string
      */
     protected $table = 'commission';
+
+    protected $fillable = [
+        'value', 'date_commission', 'affiliates_id'
+    ];
+
+    public function affiliates()
+    {
+        return $this->belongsTo(Affiliates::class, 'affiliates_id');
+    }
 }
